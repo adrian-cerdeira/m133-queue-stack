@@ -1,4 +1,4 @@
-import { expect } from "chai";
+import { expect } from "../node_modules/chai/chai.js";
 import { Queue } from "../lib/Queue";
 
 describe("Data structures", () => {
