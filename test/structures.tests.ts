@@ -20,6 +20,14 @@ describe("Data structures", () => {
     })
 
     describe("Queue", () => {
+        it("has item", () => {
+            const test = new Queue([1]);
+            const result = test.peek();
+            expect(result).to.equal(1);
+        })
+    })
+
+    describe("Queue", () => {
         it("has no item", () => {
             const test = new Queue([]);
             const result = test.peek();

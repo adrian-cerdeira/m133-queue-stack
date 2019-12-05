@@ -3,7 +3,7 @@ import { IDataScructure } from "./IDataStructure";
 export class Queue implements IDataScructure {
     public queue = [];
 
-    constructor(newQueue: []) {
+    constructor(newQueue) {
         this.queue = newQueue;
     }
 
