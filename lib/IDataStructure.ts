@@ -1,7 +1,7 @@
 export interface IDataScructure {
     size(): number;
-    enqueue(value);
-    peek();
-    poll();
-    isEmpty(): boolean;
+    // enqueue(value);
+    // peek();
+    // poll();
+    // isEmpty(): boolean;
 }

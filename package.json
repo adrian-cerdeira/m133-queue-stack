@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "test": "mocha ./test/test.ts"
+        "test": "node node_modules/mocha/bin/mocha -r ts-node/register **/*.tests.ts"
     },
-    "author": "Adrian Cerdeira",
+    "author": "Domenic Helfenstein",
     "license": "MIT",
     "dependencies": {},
     "devDependencies": {
