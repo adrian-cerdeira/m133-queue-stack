@@ -1,7 +1,7 @@
 import { IDataScructure } from "./IDataStructure";
 
 export class Queue implements IDataScructure {
-    private queue = [];
+    public queue = [];
 
     constructor(newQueue: []) {
         this.queue = newQueue;
@@ -11,19 +11,19 @@ export class Queue implements IDataScructure {
         return this.queue.length;
     }
 
-    public enqueue(item) {
+    public enqueue(item):void {
         this.queue.push(item);;
     }
 
     public peek() {
-        return this.isEmpty ? null : this.queue[0];
+        return this.isEmpty() ? null : this.queue[0];
     }
 
-    public poll() {
-        return this.queue.shift();
+    public poll(): void {
+        this.queue.shift();
     }
 
-    public isEmpty() {
+    public isEmpty(): boolean {
         return this.queue.length === 0;
     }
 }

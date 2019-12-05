@@ -11,7 +11,16 @@ describe("Data structures", () => {
     })
 
     describe("Queue", () => {
-        it("not has peek", () => {
+        it("add one item", () => {
+            const test = new Queue([]);
+            test.enqueue(1);
+            const result = test.queue.length;
+            expect(result).to.equal(1);
+        })
+    })
+
+    describe("Queue", () => {
+        it("has no item", () => {
             const test = new Queue([]);
             const result = test.peek();
             expect(result).to.equal(null);
