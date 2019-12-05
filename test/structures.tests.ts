@@ -44,6 +44,22 @@ describe("Data structures", () => {
         })
     })
 
+    describe("Queue", () => {
+        it("is empty", () => {
+            const test = new Queue([]);
+            const result = test.isEmpty();
+            expect(result).to.equal(true);
+        })
+    })
+
+    describe("Queue", () => {
+        it("is not empty", () => {
+            const test = new Queue([]);
+            const result = !test.isEmpty();
+            expect(result).to.equal(false);
+        })
+    })
+
     // describe("Factory", () => {
     //     it("can create Queue", () => {
     //         const structureType = DataStructures.Queue;
