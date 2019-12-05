@@ -3,5 +3,5 @@ export interface IDataScructure {
     enqueue(item);
     peek();
     poll();
-    // isEmpty(): boolean;
+    isEmpty(): boolean;
 }

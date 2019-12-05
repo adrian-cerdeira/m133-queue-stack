@@ -12,11 +12,14 @@ export class Queue implements IDataScructure {
     }
 
     public peek() {
-        const queueHasItems: boolean = this.queue.length > 0;
-        return queueHasItems ? this.queue[0] : null;
+        return this.isEmpty ? null : this.queue[0];
     }
 
     public poll() {
         return this.queue.shift();
+    }
+
+    public isEmpty() {
+        return this.queue.length === 0;
     }
 }
