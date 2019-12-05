@@ -9,5 +9,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Pre build
+      run: 
+        npm -v
+        node -v
+        npm ci
     - name: Run Test
       run: npm test
