@@ -14,7 +14,7 @@ describe("Data structures", () => {
         it("not has peek", () => {
             const test = new Queue();
             const result = test.peek();
-            expect(result).to.equal(undefined);
+            expect(result).to.equal(null);
         })
     })
 

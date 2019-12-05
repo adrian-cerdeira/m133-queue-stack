@@ -2,10 +2,9 @@ import { IDataScructure } from "./IDataStructure";
 
 export class Queue implements IDataScructure {
     public queue = [];
-    private offset = 0;
 
     public size(): number {
-        return (this.queue.length - this.offset);
+        return this.queue.length;
     }
 
     public enqueue(item) {
@@ -13,6 +12,11 @@ export class Queue implements IDataScructure {
     }
 
     public peek() {
-        return (this.queue.length > 0 ? this.queue[this.offset] : undefined);
+        const queueHasItems: boolean = this.queue.length > 0;
+        return queueHasItems ? this.queue[0] : null;
+    }
+
+    public poll() {
+        return this.queue.shift();
     }
 }
