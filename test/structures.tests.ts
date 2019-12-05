@@ -4,7 +4,7 @@ import { Queue } from "../lib/Queue";
 describe("Data structures", () => {
     describe("Queue", () => {
         it("has size", () => {
-            const test = new Queue();
+            const test = new Queue([]);
             const result = test.size();
             expect(result).to.equal(0);
         })
@@ -12,7 +12,7 @@ describe("Data structures", () => {
 
     describe("Queue", () => {
         it("not has peek", () => {
-            const test = new Queue();
+            const test = new Queue([]);
             const result = test.peek();
             expect(result).to.equal(null);
         })
