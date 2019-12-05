@@ -11,4 +11,8 @@ export class Queue implements IDataScructure {
     public enqueue(item) {
         this.queue.push(item);;
     }
+
+    public peek() {
+        return (this.queue.length > 0 ? this.queue[this.offset] : undefined);
+    }
 }

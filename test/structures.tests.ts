@@ -10,6 +10,14 @@ describe("Data structures", () => {
         })
     })
 
+    describe("Queue", () => {
+        it("not has peek", () => {
+            const test = new Queue();
+            const result = test.peek();
+            expect(result).to.equal(undefined);
+        })
+    })
+
     // describe("Factory", () => {
     //     it("can create Queue", () => {
     //         const structureType = DataStructures.Queue;
