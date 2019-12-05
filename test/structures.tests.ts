@@ -35,6 +35,15 @@ describe("Data structures", () => {
         })
     })
 
+    describe("Queue", () => {
+        it("remove one item", () => {
+            const test = new Queue([2, 3]);
+            test.poll();
+            const result = test.queue.length;
+            expect(result).to.equal(1);
+        })
+    })
+
     // describe("Factory", () => {
     //     it("can create Queue", () => {
     //         const structureType = DataStructures.Queue;
