@@ -1,7 +1,7 @@
 import { IDataScructure } from "./IDataStructure";
 
 export class Stack implements IDataScructure {
-    private stack = [];
+    public stack = [];
 
     constructor() {
         this.stack = new Array();

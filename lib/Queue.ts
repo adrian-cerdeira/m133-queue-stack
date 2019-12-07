@@ -1,7 +1,7 @@
 import { IDataScructure } from "./IDataStructure";
 
 export class Queue implements IDataScructure {
-    private queue = [];
+    public queue = [];
 
     constructor() {
         this.queue = new Array();
