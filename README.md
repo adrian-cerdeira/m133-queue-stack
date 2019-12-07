@@ -1,3 +1,15 @@
-# m133-queue
+# Info
 
-Auftrag 5 von Block 8 Typescript
+## DEV
+
+    git clone https://github.com/ac-webdesign/m133-queue.git;
+    cd m133-queue;
+    npm ci;
+
+## Start
+
+    npm start
+
+## Test
+
+    npm test
