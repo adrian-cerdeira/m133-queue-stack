@@ -4,8 +4,7 @@
     "description": "",
     "scripts": {
         "start": "node ./server.js",
-        "test": "node node_modules/mocha/bin/mocha -r ts-node/register **/*.tests.ts",
-        "build": "tsc"
+        "test": "node node_modules/mocha/bin/mocha -r ts-node/register **/*.tests.ts"
     },
     "author": "Adrian Cerdeira",
     "license": "MIT",

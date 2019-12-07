@@ -13,7 +13,5 @@ jobs:
           npm -v
           node -v
           npm ci
-      - name: Build lib
-        run: npm run build
       - name: Run Test
         run: npm test
