@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.use('/',
+app.use('/index.html',
     express.static('src')
 );
 
-app.listen(80, () => console.log('App started on http://localhost:80'));
+app.listen(8080, () => console.log('App started on http://localhost:8080'));
