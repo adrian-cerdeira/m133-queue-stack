@@ -3,8 +3,8 @@ import { IDataScructure } from "./IDataStructure";
 export class Queue implements IDataScructure {
     public queue = [];
 
-    constructor(newQueue) {
-        this.queue = newQueue;
+    constructor() {
+        this.queue = new Array();
     }
 
     public size(): number {
@@ -20,7 +20,7 @@ export class Queue implements IDataScructure {
     }
 
     public poll(): void {
-        this.queue.shift();
+        return this.queue.shift();
     }
 
     public isEmpty(): boolean {

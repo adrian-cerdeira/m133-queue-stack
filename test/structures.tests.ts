@@ -4,59 +4,49 @@ import { Queue } from "../lib/Queue";
 describe("Data structures", () => {
     describe("Queue", () => {
         it("has size", () => {
-            const test = new Queue([]);
-            const result = test.size();
+            const queue = new Queue();
+            const result = queue.size();
             expect(result).to.equal(0);
-        })
-    })
+        });
 
-    describe("Queue", () => {
-        it("add one item", () => {
-            const test = new Queue([]);
-            test.enqueue(1);
-            const result = test.queue.length;
-            expect(result).to.equal(1);
-        })
-    })
+        it("can add", () => {
+            const queue = new Queue();
+            queue.enqueue("item");
+            const result = queue.size();
+            expect(result).to.be.equal(1);
+        });
 
-    describe("Queue", () => {
-        it("has item", () => {
-            const test = new Queue([1]);
-            const result = test.peek();
-            expect(result).to.equal(1);
-        })
-    })
+        it("queue is empty", () => {
+            const queue = new Queue();
+            const result = queue.isEmpty();
+            expect(result).to.be.equal(true);
+        });
 
-    describe("Queue", () => {
-        it("has no item", () => {
-            const test = new Queue([]);
-            const result = test.peek();
-            expect(result).to.equal(null);
-        })
-    })
+        it("queue is not empty", () => {
+            const queue = new Queue();
+            queue.enqueue("item");
+            const result = queue.isEmpty();
+            expect(result).to.be.equal(false);
+        });
 
-    describe("Queue", () => {
-        it("remove one item", () => {
-            const test = new Queue([2, 3]);
-            test.poll();
-            const result = test.queue.length;
-            expect(result).to.equal(1);
-        })
-    })
+        it("peek next item", () => {
+            const item = "item";
+            const queue = new Queue();
+            queue.enqueue(item);
+            const result = queue.peek();
+            expect(result).to.be.equal(item);
+        });
 
-    describe("Queue", () => {
-        it("is empty", () => {
-            const test = new Queue([]);
-            const result = test.isEmpty();
-            expect(result).to.equal(true);
-        })
-    })
-
-    describe("Queue", () => {
-        it("is not empty", () => {
-            const test = new Queue([]);
-            const result = !test.isEmpty();
-            expect(result).to.equal(false);
+        it("poll next item", () => {
+            const testItem = "item1";
+            const testItem2 = "item2";
+            const queue = new Queue();
+            queue.enqueue(testItem);
+            queue.enqueue(testItem2);
+            const removed = queue.poll();
+            const remaining = queue.peek();
+            expect(removed).to.be.equal(testItem);
+            expect(remaining).to.be.equal(testItem2);
         })
     })
 
