@@ -1,5 +1,7 @@
 import { expect } from "chai";
 import { Queue } from "../lib/Queue";
+import { DataStructures } from "../lib/DataStructures";
+import { DataStructuresFactory } from "../lib/DataStructuresFactory";
 
 describe("Data structures", () => {
     describe("Queue", () => {
@@ -50,11 +52,12 @@ describe("Data structures", () => {
         })
     })
 
-    // describe("Factory", () => {
-    //     it("can create Queue", () => {
-    //         const structureType = DataStructures.Queue;
-    //         const result = DataStructureFactory.create(structureType);
-    //         expect(result).to.be.an.instanceOf(Queue);
-    //     })
-    // })
+    describe("Factory", () => {
+        it("can create Queue", () => {
+            const factory = new DataStructuresFactory();
+            const structureType = DataStructures.Queue;
+            const result = factory.create(structureType);
+            expect(result).to.be.an.instanceOf(Queue);
+        })
+    })
 })
