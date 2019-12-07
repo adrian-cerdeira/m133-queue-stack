@@ -60,6 +60,13 @@ describe("Data structures", () => {
             const result = factory.create(structureType);
             expect(result).to.be.an.instanceOf(Queue);
         })
+
+        it("can create Stack", () => {
+            const factory = new DataStructuresFactory();
+            const structureType = DataStructures.Stack;
+            const result = factory.create(structureType);
+            expect(result).to.be.an.instanceOf(Stack);
+        })
     })
 
     describe("Stack", () => {
