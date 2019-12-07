@@ -1,5 +1,6 @@
 // Imports
-import { Queue } from './Queue';
+import { DataStructuresFactory } from './DataStructuresFactory';
+import { DataStructures } from './DataStructures';
 
 // Variables
 const queueOption = document.getElementById('queue');
@@ -8,18 +9,16 @@ const button = document.getElementById('button');
 const container = document.getElementById('container');
 
 button.addEventListener('click', () => {
-    const isQueue = queueOption.spellcheck === true;
-    if (isQueue) {
-        return createQueue();
-    }
-});
-
-function createQueue() {
-    const newQueue = new Queue();
+    const factory = new DataStructuresFactory();
     const p = document.createElement('p');
-    newQueue.enqueue(nameOfElement);
-    newQueue.queue.forEach(q => {
+    const isQueue = queueOption.spellcheck === true;
+    const dataStructure = factory.create(isQueue ? DataStructures.Queue : DataStructures.Stack);
+
+    dataStructure.enqueue(nameOfElement);
+
+    dataStructure[isQueue ? 'queue' : 'stack'].forEach(q => {
         p.innerHTML += q;
     })
-    return container.appendChild(p);
-}
+
+    container.appendChild(p);
+});
