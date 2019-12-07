@@ -11,9 +11,34 @@
 </head>
 
 <body>
-    <section class="section">
+
+    <section class="section container">
         <h1 class="title">Queue vs Stack</h1>
+
+        <form class="form">
+            <div class="field">
+                <div class="control">
+                    <label class="radio">
+                        <input id="queue" type="radio" name="answer">
+                        Queue
+                    </label>
+                    <label class="radio">
+                        <input id="stack" type="radio" name="answer">
+                        Stack
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input id="new-element" class="input" type="text" placeholder="Name" required>
+                </div>
+            </div>
+            <button class="button is-black" id="add-datastructure">Element zur Datenstruktur hinzufügen</button>
+        </form>
+
+        <div id="container"></div>
     </section>
+
 </body>
 
 </html>
