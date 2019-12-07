@@ -1,5 +1,6 @@
 import { expect } from "chai";
 import { Queue } from "../lib/Queue";
+import { Stack } from "../lib/Stack";
 import { DataStructures } from "../lib/DataStructures";
 import { DataStructuresFactory } from "../lib/DataStructuresFactory";
 
@@ -58,6 +59,54 @@ describe("Data structures", () => {
             const structureType = DataStructures.Queue;
             const result = factory.create(structureType);
             expect(result).to.be.an.instanceOf(Queue);
+        })
+    })
+
+    describe("Stack", () => {
+        it("has size", () => {
+            const stack = new Stack();
+            const result = stack.size();
+            expect(result).to.equal(0);
+        });
+
+        it("can add", () => {
+            const stack = new Stack();
+            stack.enqueue("item");
+            const result = stack.size();
+            expect(result).to.be.equal(1);
+        });
+
+        it("stack is empty", () => {
+            const stack = new Stack();
+            const result = stack.isEmpty();
+            expect(result).to.be.equal(true);
+        });
+
+        it("stack is not empty", () => {
+            const stack = new Stack();
+            stack.enqueue("item");
+            const result = stack.isEmpty();
+            expect(result).to.be.equal(false);
+        });
+
+        it("peek next item", () => {
+            const item = "item";
+            const stack = new Stack();
+            stack.enqueue(item);
+            const result = stack.peek();
+            expect(result).to.be.equal(item);
+        });
+
+        it("poll next item", () => {
+            const testItem = "item1";
+            const testItem2 = "item2";
+            const stack = new Stack();
+            stack.enqueue(testItem);
+            stack.enqueue(testItem2);
+            const removed = stack.poll();
+            const remaining = stack.peek();
+            expect(removed).to.be.equal(testItem2);
+            expect(remaining).to.be.equal(testItem);
         })
     })
 })
