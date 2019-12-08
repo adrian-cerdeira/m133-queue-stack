@@ -46,10 +46,9 @@ describe("Data structures", () => {
             const queue = new Queue();
             queue.enqueue(testItem);
             queue.enqueue(testItem2);
-            const removed = queue.poll();
-            const remaining = queue.peek();
-            expect(removed).to.be.equal(testItem);
-            expect(remaining).to.be.equal(testItem2);
+            queue.poll();
+            const result = queue.size();
+            expect(result).to.be.equal(1);
         })
     })
 
@@ -110,10 +109,9 @@ describe("Data structures", () => {
             const stack = new Stack();
             stack.enqueue(testItem);
             stack.enqueue(testItem2);
-            const removed = stack.poll();
-            const remaining = stack.peek();
-            expect(removed).to.be.equal(testItem2);
-            expect(remaining).to.be.equal(testItem);
+            stack.poll();
+            const result = stack.size();
+            expect(result).to.be.equal(1);
         })
     })
 })

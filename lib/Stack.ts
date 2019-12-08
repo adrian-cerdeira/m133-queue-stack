@@ -20,7 +20,7 @@ export class Stack implements IDataScructure {
     }
 
     public poll(): void {
-        return this.stack.pop();
+        this.stack.pop();
     }
 
     public isEmpty(): boolean {

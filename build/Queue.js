@@ -16,7 +16,7 @@ var Queue = /** @class */ (function () {
         return this.isEmpty() ? null : this.queue[0];
     };
     Queue.prototype.poll = function () {
-        return this.queue.shift();
+        this.queue.shift();
     };
     Queue.prototype.isEmpty = function () {
         return this.queue.length === 0;

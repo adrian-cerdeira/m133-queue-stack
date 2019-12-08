@@ -20,7 +20,7 @@ export class Queue implements IDataScructure {
     }
 
     public poll(): void {
-        return this.queue.shift();
+        this.queue.shift();
     }
 
     public isEmpty(): boolean {

@@ -16,7 +16,7 @@ var Stack = /** @class */ (function () {
         return this.isEmpty() ? null : this.stack[0];
     };
     Stack.prototype.poll = function () {
-        return this.stack.pop();
+        this.stack.pop();
     };
     Stack.prototype.isEmpty = function () {
         return this.stack.length === 0;
