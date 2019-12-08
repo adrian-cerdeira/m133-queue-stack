@@ -13,7 +13,7 @@ button.addEventListener('click', () => {
     const isQueue = queueOption.spellcheck === true;
     const dataStructure = factory.create(isQueue ? DataStructures.Queue : DataStructures.Stack);
 
-    dataStructure.enqueue(nameOfElement);
+    dataStructure.enqueue(nameOfElement.value);
 
     dataStructure[isQueue ? 'queue' : 'stack'].forEach(q => {
         const p = document.createElement('p');
