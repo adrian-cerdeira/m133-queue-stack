@@ -1,7 +1,7 @@
 # Info
 
 - [Bulma als CSS-Framework](https://github.com/jgthms/bulma)
-- [Express als Webserver](https://github.com/expressjs/express)
+- [Webpack als Webserver & Tooling](https://webpack.js.org/)
 - [Mocha für Testing](https://github.com/mochajs/mocha) mit [chai](https://github.com/chaijs/chai)
 - [Typescript als Grundsprache](https://github.com/microsoft/TypeScript)
 
