@@ -13,9 +13,7 @@ jobs:
           npm -v
           node -v
           npm ci
-      - name: Build & Start
-        run: |
-          npm run build
-          npm start
+      - name: Build
+        run: npm run build
       - name: Run Test
         run: npm test
