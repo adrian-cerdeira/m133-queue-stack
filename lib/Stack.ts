@@ -12,7 +12,7 @@ export class Stack implements IDataScructure {
     }
 
     public enqueue(item): void {
-        this.stack.push(item);;
+        this.stack.push(item);
     }
 
     public peek() {

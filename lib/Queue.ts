@@ -12,7 +12,7 @@ export class Queue implements IDataScructure {
     }
 
     public enqueue(item): void {
-        this.queue.push(item);;
+        this.queue.push(item);
     }
 
     public peek() {

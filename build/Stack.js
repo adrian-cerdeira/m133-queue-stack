@@ -10,7 +10,6 @@ var Stack = /** @class */ (function () {
     };
     Stack.prototype.enqueue = function (item) {
         this.stack.push(item);
-        ;
     };
     Stack.prototype.peek = function () {
         return this.isEmpty() ? null : this.stack[0];

@@ -10,7 +10,6 @@ var Queue = /** @class */ (function () {
     };
     Queue.prototype.enqueue = function (item) {
         this.queue.push(item);
-        ;
     };
     Queue.prototype.peek = function () {
         return this.isEmpty() ? null : this.queue[0];
