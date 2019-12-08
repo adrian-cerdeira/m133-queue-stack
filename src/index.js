@@ -1,6 +1,6 @@
 // Imports
-import { DataStructuresFactory } from './DataStructuresFactory';
-import { DataStructures } from './DataStructures';
+import { DataStructuresFactory } from '../build/DataStructuresFactory';
+import { DataStructures } from '../build/DataStructures';
 
 // Variables
 const queueOption = document.getElementById('queue');

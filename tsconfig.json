@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "src/build",
+        "outDir": "build",
         "target": "es6",
     },
     "include": [
