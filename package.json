@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "start": "npm run build && node ./server.js",
+        "start": "npm run build && ts-node server",
         "test": "node node_modules/mocha/bin/mocha -r ts-node/register **/*.tests.ts",
         "build": "tsc"
     },
