@@ -5,9 +5,7 @@
 - [Mocha für Testing](https://github.com/mochajs/mocha) mit [chai](https://github.com/chaijs/chai)
 - [Typescript als Grundsprache](https://github.com/microsoft/TypeScript)
 
-## DEV
-
-### Setup
+## Setup
 
     git clone https://github.com/ac-webdesign/m133-queue-stack.git;
     cd m133-queue-stack;
