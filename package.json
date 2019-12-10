@@ -4,9 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "tsc && webpack-dev-server --mode development --open",
+        "start": "npm run transpile && webpack-dev-server --mode development --open",
         "build": "webpack --mode production --progress",
-        "test": "node node_modules/mocha/bin/mocha -r ts-node/register **/*.tests.ts"
+        "test": "node node_modules/mocha/bin/mocha -r ts-node/register **/*.tests.ts",
+        "transpile": "tsc"
     },
     "author": "Adrian Cerdeira",
     "license": "MIT",
