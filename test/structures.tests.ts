@@ -40,7 +40,7 @@ describe("Data structures", () => {
             expect(result).to.be.equal(item);
         });
 
-        it("poll next item", () => {
+        it("remove item", () => {
             const testItem = "item1";
             const testItem2 = "item2";
             const queue = new Queue();
