@@ -32,7 +32,7 @@ btnAdd.addEventListener('click', () => {
 
 // Element löschen, je nach Datenstruktur
 btnDelete.addEventListener('click', () => {
-    dataStructure.poll();;
+    dataStructure.poll();
     output();
 })
 
