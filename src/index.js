@@ -22,7 +22,7 @@ btnAdd.addEventListener('click', () => {
     const queueOutputEmpty = isQueue && queueContainer.innerHTML === '';
     const stackOutputEmpty = !isQueue && stackContainer.innerHTML === '';
 
-    // Objekt erstellen, falls noch nicht existent
+    // Objekt erstellen, falls noch nicht existiert
     if (queueOutputEmpty) {
         Queue = factory.create(DataStructures.Queue)
     } else if (stackOutputEmpty) {
