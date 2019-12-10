@@ -32,7 +32,7 @@ describe("Data structures", () => {
             expect(result).to.be.equal(false);
         });
 
-        it("peek next item", () => {
+        it("peek item", () => {
             const item = "item";
             const queue = new Queue();
             queue.enqueue(item);
@@ -95,7 +95,7 @@ describe("Data structures", () => {
             expect(result).to.be.equal(false);
         });
 
-        it("peek next item", () => {
+        it("peek item", () => {
             const item = "item";
             const stack = new Stack();
             stack.enqueue(item);
@@ -103,7 +103,7 @@ describe("Data structures", () => {
             expect(result).to.be.equal(item);
         });
 
-        it("poll next item", () => {
+        it("remove item", () => {
             const testItem = "item1";
             const testItem2 = "item2";
             const stack = new Stack();
